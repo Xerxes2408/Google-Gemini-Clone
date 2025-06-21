@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Gemini</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">
+        Meet <span class="gemini">Gemini</span>, your personal AI assistant
+      </h1>
+      <button id="toggle-theme">🌙</button>
+    </header>
+
+    <main class="chat-wrapper">
+      <div class="chat-container" id="chat-container"></div>
+
+      <form class="typing-form" onsubmit="fetchResults(event)">
+        <div class="input-wrapper">
+          <input
+            id="text-input"
+            type="text"
+            class="typing-input"
+            placeholder="Ask me anything..."
+            required
+          />
+          <button type="submit" class="send-btn">
+            <span class="material-symbols-outlined">send</span>
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
